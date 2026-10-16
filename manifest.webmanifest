@@ -1,0 +1,17 @@
+{
+  "name": "RESPAWN \u2014 Find Your Squad",
+  "short_name": "RESPAWN",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#090b12",
+  "theme_color": "#090b12",
+  "description": "Find Your Squad. Build Your Legacy.",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

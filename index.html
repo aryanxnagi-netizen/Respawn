@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#090b12" />
+  <meta name="description" content="RESPAWN — Find Your Squad. Build Your Legacy." />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+  <title>RESPAWN — Find Your Squad</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <button class="brand" data-nav="Home" aria-label="RESPAWN home"><span class="brand-mark">R</span><span>RESPAWN</span></button>
+      <div class="header-actions">
+        <button class="icon-btn" data-nav="Explore" aria-label="Search">⌕</button>
+        <button class="icon-btn notification-btn" data-nav="Notifications" aria-label="Notifications">♧<i></i></button>
+        <button class="coin-pill" data-nav="Wallet">◈ <span id="coin-count">120</span></button>
+        <button class="avatar mini-avatar" data-nav="My Gamer ID" aria-label="My profile">A</button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+    <aside class="side-menu hidden" id="side-menu">
+      <div class="menu-heading">YOUR SPACE</div>
+      <button data-nav="Messages">✉ Messages</button><button data-nav="Explore">⌕ Search & Explore</button>
+      <button data-nav="Notifications">♧ Notifications</button><button data-nav="Wallet">◈ Coin wallet</button>
+      <button data-nav="Customization">✦ Customization studio</button><button data-nav="Missions">⚑ Missions & achievements</button>
+      <button data-nav="Settings">⚙ Settings & privacy</button>
+      <div class="menu-note">RESPAWN DEMO · Local data stays in this browser</div>
+    </aside>
+    <main id="screen" tabindex="-1"></main>
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button data-nav="Home" class="nav-item active"><span>⌂</span><small>Home</small></button>
+      <button data-nav="FRAGZ" class="nav-item"><span>▷</span><small>FRAGZ</small></button>
+      <button data-nav="Squad Finder" class="nav-item squad-nav"><span>✣</span><small>Squad</small></button>
+      <button data-nav="ARENA" class="nav-item"><span>♜</span><small>ARENA</small></button>
+      <button data-nav="My Gamer ID" class="nav-item"><span>◉</span><small>Gamer ID</small></button>
+    </nav>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="modal-root"></div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
